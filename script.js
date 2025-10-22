@@ -9,3 +9,12 @@ function showNextSlide() {
 }
 
 setInterval(showNextSlide, 4000); // Change image every 4 seconds
+
+// Mobile menu toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.toggle("active");
+});
+
