@@ -185,15 +185,21 @@ footer p {
   .hero-text h1 {
     font-size: 2.2rem;
   }
-  /* --- Mobile Navigation --- */
+}
+
+/* --- Mobile Navigation --- */
 .menu-toggle {
-  display: none;
+  display: none; /* hidden by default (desktop) */
   font-size: 1.8rem;
   cursor: pointer;
   color: #007bff;
 }
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* visible on mobile */
+  }
+
   nav {
     position: absolute;
     top: 70px;
@@ -215,10 +221,4 @@ footer p {
     flex-direction: column;
     gap: 15px;
   }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
 }
