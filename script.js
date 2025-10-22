@@ -1,20 +1,28 @@
-// Simple automatic slideshow
-const slides = document.querySelectorAll(".slides");
-let index = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  toggle && toggle.addEventListener('click', () => {
+    nav.style.display = nav.style.display === 'flex' ? '' : 'flex';
+  });
 
-function showNextSlide() {
-  slides[index].classList.remove("active");
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
-}
+  // Set current year
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
 
-setInterval(showNextSlide, 4000); // Change image every 4 seconds
+  // Fake product images (gradient placeholders)
+  document.querySelectorAll('.card-media').forEach((el, i) => {
+    el.style.background = `linear-gradient(135deg, rgba(0,174,239,${0.08 * (i + 3)}), #fff)`;
+    el.style.display = 'flex';
+    el.style.alignItems = 'center';
+    el.style.justifyContent = 'center';
+    el.innerHTML = `<div style="font-size:0.9rem;color:#556">Product Image</div>`;
+  });
 
-// Mobile menu toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navbar = document.getElementById("navbar");
-
-menuToggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
+  // Contact form
+  const form = document.getElementById('contactForm');
+  form && form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you! Your message was sent. (This is a demo)');
+    form.reset();
+  });
 });
-

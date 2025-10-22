@@ -1,89 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aquarius - Frozen Nila</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="logo">MyBrand</div>
-
-    <!-- Hamburger Menu Button -->
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="" alt="Aquarius Logo" class="logo-placeholder" />
+        <h1>Aquarius Nila</h1>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-primary mobile-cta">Order</button>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
     </div>
-
-    <nav id="navbar">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">What We Do</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="slides active"><img src="https://picsum.photos/id/1018/1920/1080" alt="slide1" /></div>
-    <div class="slides"><img src="https://picsum.photos/id/1025/1920/1080" alt="slide2" /></div>
-    <div class="slides"><img src="https://picsum.photos/id/1036/1920/1080" alt="slide3" /></div>
-
-    <div class="hero-text">
-      <h1>Welcome to MyBrand</h1>
-      <p>Your success is our mission</p>
-    </div>
-  </section>
-
-  <!-- About Us -->
-  <section id="about" class="about">
-    <img src="https://picsum.photos/id/1005/600/400" alt="About us" />
-    <div class="about-text">
-      <h2>About Us</h2>
-      <p>
-        We are a passionate team dedicated to delivering the best digital
-        solutions for businesses worldwide. Our goal is to empower your brand
-        through innovative design, modern technology, and effective strategies
-        that drive measurable results.
-      </p>
-    </div>
-  </section>
-
-  <!-- What We Do -->
-  <section id="services" class="services">
-    <h2>What We Do</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>
-          We create stunning, fast, and secure websites that help you stand out
-          online.
-        </p>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2>Fresh from Pond to Freezer</h2>
+          <p>Premium frozen ikan nila processed under GMP — ready for your table.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#products">Shop Products</a>
+            <a class="btn btn-ghost" href="#about">Our Process</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="packshot">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="placeholder-svg">
+              <rect width="100%" height="100%" fill="#F4F8FB" />
+              <g transform="translate(80,40) scale(0.9)">
+                <path d="M10 120 C60 10, 160 10, 210 120 C160 150, 60 150, 10 120Z" fill="#00AEEF" opacity="0.85"/>
+                <circle cx="90" cy="80" r="20" fill="#A7B0B8" opacity="0.6"/>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Digital Marketing</h3>
-        <p>
-          Grow your audience and boost engagement with data-driven marketing
-          strategies.
-        </p>
+    </section>
+
+    <section id="products" class="products container">
+      <h3 class="section-title">Our Products</h3>
+      <p class="section-sub">Ready-to-cook frozen nila — fillet, whole, and seasoned packs.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Fillet Pack 500g</h4>
+            <p class="price">IDR 45.000</p>
+            <p class="desc">Skinless fillet, vacuum sealed, frozen fresh.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary small">Buy</button>
+              <button class="btn btn-ghost small">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Whole Nila 800-1kg</h4>
+            <p class="price">IDR 60.000</p>
+            <p class="desc">Whole cleaned fish, blast frozen to lock in freshness.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary small">Buy</button>
+              <button class="btn btn-ghost small">Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h4>Seasoned Grill Pack</h4>
+            <p class="price">IDR 55.000</p>
+            <p class="desc">Ready-to-grill with local spices, frozen and sealed.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary small">Buy</button>
+              <button class="btn btn-ghost small">Details</button>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="card">
-        <h3>Brand Design</h3>
-        <p>
-          Build a unique brand identity that captures your vision and connects
-          with your audience.
-        </p>
+    </section>
+
+    <section id="about" class="about container">
+      <h3 class="section-title">Our Process & GMP</h3>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Aquarius Nila processes fresh ikan nila under strict GMP procedures. From careful pond selection, hygienic handling, rapid chilling, to controlled freezing and packaging — every step is recorded and certified.
+          </p>
+          <ul>
+            <li>Locally sourced from trusted ponds</li>
+            <li>GMP production line & cold chain</li>
+            <li>Hygienic vacuum-sealed packaging</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="badge">GMP Certified</div>
+          <div class="stats">
+            <div><strong>100%</strong><span>Quality checks</span></div>
+            <div><strong>7</strong><span>Days shelf frozen</span></div>
+            <div><strong>Local</strong><span>Indonesian ponds</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3 class="section-title">Contact Us</h3>
+      <p>For wholesale or retail enquiries, drop us a message.</p>
+      <form id="contactForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Message"></textarea>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; <span id="year">2025</span> Aquarius Nila — All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <p>&copy; 2025 MyBrand. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
