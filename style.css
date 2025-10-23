@@ -1,128 +1,108 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
-}
-
-/* Navigation */
-.nav-link {
-    color: #4B5563;
-    transition: color 0.3s;
+  }
+  
+  /* Navigation */
+  .nav-link {
+    color: #4b5563;
+    transition: 0.3s;
     font-weight: 500;
-}
-
-.nav-link:hover {
+  }
+  .nav-link:hover {
     color: #10567A;
-}
-
-/* Mobile menu */
-.mobile-link {
+  }
+  
+  /* Mobile Links */
+  .mobile-link {
     display: block;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     border-bottom: 1px solid #e5e7eb;
     color: #374151;
-    transition: background 0.3s;
-}
-
-.mobile-link:hover {
+    transition: 0.3s;
+  }
+  .mobile-link:hover {
     background: #f9fafb;
-}
-
-/* Buttons */
-.btn-primary {
-    background-color: #198754;
-    color: white;
+  }
+  
+  /* Hero Section */
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #198754;
+    color: #fff;
+    border-radius: 0.5rem;
     font-weight: 600;
-    border-radius: 8px;
-    padding: 12px 32px;
-    transition: all 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #166534;
+    transition: 0.3s;
+  }
+  .cta-button:hover {
+    background: #166534;
     transform: scale(1.05);
-}
-
-.btn-outline {
-    border: 2px solid white;
-    color: white;
-    padding: 12px 32px;
-    border-radius: 8px;
-    transition: all 0.3s;
-}
-
-.btn-outline:hover {
-    background-color: white;
-    color: #10567A;
-}
-
-.btn-secondary {
-    background-color: #10567A;
-    color: white;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 12px 24px;
-    transition: all 0.3s;
-}
-
-.btn-secondary:hover {
-    background-color: #08344b;
-    transform: scale(1.05);
-}
-
-.btn-white {
-    background-color: white;
-    color: #198754;
-    padding: 12px 32px;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.btn-white:hover {
-    transform: scale(1.05);
-}
-
-/* Typography */
-.section-title {
+  }
+  
+  /* Headings */
+  .section-title {
     color: #10567A;
     text-align: center;
-    font-size: 2.25rem;
     font-weight: 800;
+    font-size: 2.25rem;
     margin-bottom: 3rem;
-}
-
-.sub-title {
+  }
+  
+  .subheading {
     font-size: 1.5rem;
     font-weight: 600;
     color: #111827;
     margin-bottom: 1rem;
-}
-
-/* List icons */
-.list-item {
+  }
+  
+  /* List Items */
+  .list-item {
     display: flex;
     align-items: center;
-}
-
-.list-item::before {
-    content: '✓';
+    color: #374151;
+  }
+  .list-item::before {
+    content: "✔";
     color: #198754;
-    margin-right: 8px;
-}
-
-/* Info cards */
-.info-card {
-    background-color: #F4E8D7;
-    padding: 24px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.info-card h3 {
-    color: #10567A;
+    margin-right: 0.5rem;
+  }
+  
+  /* Catalog */
+  .product-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+  .product-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  .product-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  .product-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+  .product-price {
+    color: #198754;
     font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .add-btn {
+    margin-top: 0.75rem;
+    width: 100%;
+    background: #10567A;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     font-weight: 600;
-    margin-bottom: 12px;
-}
-    
+    transition: 0.3s;
+  }
+  .add-btn:hover {
+    background: #0d4561;
+  }
+  

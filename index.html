@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ikan Kita - Premium Frozen Fish</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikan Kita</title>
 
-    <!-- Tailwind CSS -->
+    <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Tailwind Configuration -->
+    <!-- Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -24,63 +24,61 @@
                         'sea-green': '#198754',
                         'sand-gold': '#F4E8D7',
                     },
-                },
-            },
-        };
+                }
+            }
+        }
     </script>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-3xl font-extrabold text-ocean-blue tracking-tighter">
-                Ikan Kita
-            </a>
+            <a href="#" class="text-3xl font-extrabold text-ocean-blue tracking-tighter">Ikan Kita</a>
 
+            <!-- Desktop Nav -->
             <div class="hidden md:flex space-x-8">
-                <a href="#market" class="nav-link">Market</a>
+                <a href="#market" class="nav-link">Pasar</a>
                 <a href="#bistro" class="nav-link">Bistro</a>
-                <a href="#catering" class="nav-link">Product</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#catalog" class="nav-link">Katalog</a>
+                <a href="#contact" class="nav-link">Kontak</a>
             </div>
 
+            <!-- Mobile Menu Button -->
             <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-ocean-blue hover:bg-sand-gold transition duration-300">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
 
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
-            <a href="#market" class="mobile-link">Market</a>
+            <a href="#market" class="mobile-link">Pasar</a>
             <a href="#bistro" class="mobile-link">Bistro</a>
-            <a href="#catering" class="mobile-link">Product</a>
-            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#catalog" class="mobile-link">Katalog</a>
+            <a href="#contact" class="mobile-link">Kontak</a>
         </div>
     </header>
 
-    <!-- Main -->
     <main>
         <!-- Hero Section -->
         <section id="hero" class="relative bg-ocean-blue text-white overflow-hidden">
             <div class="absolute inset-0">
-                <img src="https://placehold.co/1600x800/10567A/FFFFFF?text=Premium+Fresh+Seafood+Market"
-                     alt="Display of premium fresh seafood and fish"
-                     class="w-full h-full object-cover opacity-30" />
+                <img src="https://placehold.co/1600x800/10567A/FFFFFF?text=Pasar+Makanan+Laut+Segar+Premium"
+                     alt="Makanan laut segar"
+                     class="w-full h-full object-cover opacity-30"
+                     onerror="this.onerror=null; this.src='https://placehold.co/1600x800/10567A/FFFFFF?text=Tangkapan+Segar+Harian';">
             </div>
 
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 text-center">
-                <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">
-                    The Freshest Catch. Guaranteed.
-                </h1>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">Tangkapan Paling Segar. Dijamin.</h1>
                 <p class="text-xl md:text-2xl mb-8 font-light max-w-3xl mx-auto">
-                    From our boat to your plate—experience Sydney's premier destination for seafood market produce and gourmet dining.
+                    Dari kapal kami ke piring Anda—rasakan tujuan utama Jakarta untuk produk pasar segar premium.
                 </p>
-                <div class="space-x-4">
-                    <a href="#market" class="btn-primary">Shop The Market</a>
-                    <a href="#bistro" class="btn-outline">Dine In The Bistro</a>
+                <div class="flex justify-center">
+                    <a href="#market" class="cta-button">Belanja di Pasar</a>
                 </div>
             </div>
         </section>
@@ -88,23 +86,25 @@
         <!-- Market Section -->
         <section id="market" class="py-16 md:py-24 bg-sand-gold">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="section-title">Premium Frozen Fish</h2>
+                <h2 class="section-title">Pasar Ikan Kita</h2>
+
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h3 class="sub-title">Komitmen Kami terhadap Kualitas</h3>
-                        <p class="mb-6 leading-relaxed">
-                            Kami bangga menawarkan pilihan Ikan tersegar yang bersumber secara lokal dan berkelanjutan.
+                        <h3 class="subheading">Komitmen Kami terhadap Kualitas</h3>
+                        <p class="mb-6">
+                            Kami bangga menawarkan makanan laut lokal dan berkelanjutan yang paling segar.
+                            Tim ahli kami siap membantu dengan pengirisan dan potongan khusus.
                         </p>
                         <ul class="space-y-3 text-lg">
-                            <li class="list-item">Melalui Proses yang higenis terjamin</li>
-                            <li class="list-item">Praktik penangkapan ikan berkelanjutan terjamin.</li>
-                            <li class="list-item">Filleting oleh ahli dan persiapan khusus di tempat.</li>
+                            <li class="list-item">Pengiriman harian langsung dari dermaga.</li>
+                            <li class="list-item">Praktik penangkapan ikan berkelanjutan dijamin.</li>
+                            <li class="list-item">Pengirisan oleh ahli di tempat.</li>
                         </ul>
                     </div>
                     <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeRQQGhhorp6tf4bCaJYlR4_E12mc0KMWqw&s"
-                             alt="Fresh fish display"
-                             class="rounded-xl shadow-2xl w-full object-cover h-96" />
+                        <img src="https://placehold.co/600x400/14B8A6/FFFFFF?text=Tangkapan+Pasar+Harian"
+                             alt="Ikan segar"
+                             class="rounded-xl shadow-2xl w-full object-cover h-96">
                     </div>
                 </div>
             </div>
@@ -113,65 +113,87 @@
         <!-- Bistro -->
         <section id="bistro" class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="section-title">The Bistro Experience</h2>
+                <h2 class="section-title">Pengalaman Bistro</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img src="https://placehold.co/600x400/059669/FFFFFF?text=Gourmet+Seafood+Dish"
-                             alt="Seafood dish"
-                             class="rounded-xl shadow-2xl w-full object-cover h-96" />
+                        <img src="https://placehold.co/600x400/059669/FFFFFF?text=Hidangan+Bistro"
+                             alt="Hidangan bistro"
+                             class="rounded-xl shadow-2xl w-full object-cover h-96">
                     </div>
                     <div>
-                        <h3 class="sub-title">Gourmet Dining by the Sea</h3>
-                        <p class="mb-6 leading-relaxed">
-                            Enjoy waterfront views while savoring our signature seafood dishes.
+                        <h3 class="subheading">Santapan Gourmet di Tepi Laut</h3>
+                        <p class="mb-6">
+                            Bistro kami mengubah hasil tangkapan segar menjadi mahakarya kuliner. Nikmati
+                            pemandangan laut sambil menyantap hidangan khas kami.
                         </p>
-                        <a href="#contact" class="btn-secondary">Book A Table Now</a>
+                        <a href="#contact" class="cta-secondary">Pesan Meja Sekarang</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Catering -->
-        <section id="catering" class="py-16 bg-gray-100">
+        <!-- Catalog -->
+        <section id="catalog" class="py-16 md:py-24 bg-gray-100">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-sea-green text-white p-8 md:p-12 rounded-xl shadow-2xl text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Gourmet Seafood Catering</h2>
-                    <p class="text-xl mb-6 max-w-2xl mx-auto">
-                        Impress your guests with an exquisite seafood spread for any occasion.
-                    </p>
-                    <a href="#contact" class="btn-white">Inquire About Catering</a>
+                <h2 class="section-title">Tangkapan Unggulan Hari Ini</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="product-card">
+                        <img src="https://placehold.co/600x400/F97316/FFFFFF?text=Kakap+Merah"
+                             alt="Kakap Merah"
+                             class="product-img">
+                        <div class="p-5 text-center">
+                            <h3 class="product-name">Ikan Kakap Merah Australia</h3>
+                            <p class="product-price">Rp 95.000 <span>/ kg</span></p>
+                            <button class="add-btn">Tambahkan ke Keranjang</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/600x400/4F46E5/FFFFFF?text=Tiram+Segar"
+                             alt="Tiram"
+                             class="product-img">
+                        <div class="p-5 text-center">
+                            <h3 class="product-name">Tiram Batu Sydney Premium</h3>
+                            <p class="product-price">Rp 15.000 <span>/ satuan</span></p>
+                            <button class="add-btn">Tambahkan ke Keranjang</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://placehold.co/600x400/06B6D4/FFFFFF?text=Salmon"
+                             alt="Salmon"
+                             class="product-img">
+                        <div class="p-5 text-center">
+                            <h3 class="product-name">Fillet Salmon Tasmania</h3>
+                            <p class="product-price">Rp 140.000 <span>/ kg</span></p>
+                            <button class="add-btn">Tambahkan ke Keranjang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#market" class="cta-button">Lihat Daftar Pasar Lengkap</a>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
         <section id="contact" class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="section-title">Find Us & Get In Touch</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="info-card">
-                        <h3>Market Hours</h3>
-                        <p>Mon - Sat: 7:00am - 5:00pm</p>
-                        <p>Sun: 8:00am - 4:00pm</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Bistro Bookings</h3>
-                        <p>Lunch: 11:30am - 3:00pm</p>
-                        <p>Dinner: 5:00pm - 9:00pm</p>
-                    </div>
-                    <div class="info-card">
-                        <h3>Contact Details</h3>
-                        <p>123 Harbour Road, Sydney NSW</p>
-                        <p class="font-bold">(02) 9876 5432</p>
-                        <p>info@azurecoast.com.au</p>
-                    </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="section-title">Temukan Kami & Hubungi</h2>
+
+                <div class="max-w-md mx-auto bg-sand-gold p-6 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-ocean-blue mb-3">PKBM Bina Insan Kamil</h3>
+                    <p>Jl. Raya Utama 456, Jakarta Selatan</p>
+                    <p class="font-bold mt-2">(021) 1234 5678</p>
+                    <p>info@ikankita.com.au</p>
                 </div>
 
                 <div class="mt-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.428587635832!2d151.2057390748231!3d-33.86790791834138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae42e48e02d9%3A0x63351915359a0f44!2sSydney%20Fish%20Market!5e0!3m2!1sen!2sau!4v1687980000000!5m2!1sen!2sau"
-                        width="100%" height="450" style="border:0;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    <iframe title="Peta Lokasi PKBM Bina Insan Kamil"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102030.52848417578!2d106.77259685376518!3d-6.229746685822365"
+                        width="100%" height="450" style="border:0;" loading="lazy"
                         class="rounded-xl shadow-2xl">
                     </iframe>
                 </div>
@@ -179,15 +201,16 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-ocean-blue text-white py-10 text-center">
-        <p class="text-2xl font-bold mb-4">Ikan Kita</p>
-        <div class="space-x-4 mb-4">
-            <a href="#" class="hover:text-sand-gold transition duration-300">Privacy Policy</a>
-            <span class="text-gray-400">|</span>
-            <a href="#" class="hover:text-sand-gold transition duration-300">Terms of Service</a>
+    <footer class="bg-ocean-blue text-white py-10">
+        <div class="container mx-auto text-center">
+            <p class="text-2xl font-bold mb-4">Ikan Kita</p>
+            <div class="space-x-4 mb-4">
+                <a href="#" class="hover:text-sand-gold">Kebijakan Privasi</a>
+                <span class="text-gray-400">|</span>
+                <a href="#" class="hover:text-sand-gold">Ketentuan Layanan</a>
+            </div>
+            <p class="text-sm text-gray-400">&copy; 2025 Ikan Kita. Semua hak dilindungi.</p>
         </div>
-        <p class="text-sm text-gray-400">&copy; 2025 Ikan Kita. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript -->
